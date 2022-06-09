@@ -89,7 +89,10 @@ function App() {
         <Route path="/products/:keyword" component={Products} />
         <Route exact path="/search" component={Search} />
 
-        <Route exact path="/contact" herf="https://instagram.com/the_bikers_land_mbd?igshid=YmMyMTA2M2Y=" />
+        <Route exact path="/contact" component={() => { 
+     window.location.href = 'https://instagram.com/the_bikers_land_mbd?igshid=YmMyMTA2M2Y='; 
+     return null;
+}} />
 
         <ProtectedRoute exact path="/account" component={Profile} />
         <ProtectedRoute exact path="/me/update" component={UpdateProfile} />
