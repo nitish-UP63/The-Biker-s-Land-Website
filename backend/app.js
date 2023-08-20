@@ -9,6 +9,9 @@ const fileUpload = require("express-fileupload");
 const path = require("path");
 
 const app = express();
+const cors = require('cors');
+
+
 
 //config
 if (process.env.NODE_ENV !== "PRODUCTION") {
@@ -19,7 +22,9 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
-
+app.use(cors({
+  origin: 'https://frabjous-moonbeam-54531f.netlify.app/', //frontend URL here
+}));
 //Route Imports
 const product = require("./routes/productRoute");
 const user = require("./routes/userRoute");
