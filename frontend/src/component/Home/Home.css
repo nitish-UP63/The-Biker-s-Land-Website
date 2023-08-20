@@ -135,12 +135,13 @@
     margin: 2vmax;
     transition: all 0.5s;
     padding-bottom: 0.5vmax;
-    border: 2px solid #C0C0C0;
+    /* border: 2px solid #C0C0C0; */
     border-radius: 0.2vmax;
   }
   
   .productCard > img {
     width: 14vmax;
+    height: 14vmax;
   }
   
   .productCard > div {
