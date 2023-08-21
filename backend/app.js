@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
 app.use(cors({
-  origin: 'https://frabjous-moonbeam-54531f.netlify.app/', //frontend URL here
+  origin: 'https://dashing-syrniki-e8d113.netlify.app/', //frontend URL here
 }));
 //Route Imports
 const product = require("./routes/productRoute");
